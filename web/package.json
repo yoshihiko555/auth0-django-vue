@@ -46,7 +46,17 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+        "no-tabs": 0,
+        "indent": "off",
+        "comma-dangle": "off",
+        "eol-last": "off",
+        "no-unused-vars": "off",
+        "no-mixed-spaces-and-tabs": "off",
+        "no-unneeded-ternary": "off",
+        "vue/no-unused-components": "off",
+        "no-multi-spaces": "off"  
+    }
   },
   "browserslist": [
     "> 1%",

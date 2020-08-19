@@ -3,6 +3,7 @@ from django.http import HttpResponse
 
 
 def public(request):
+    print('a')
     return HttpResponse("You don't need to be authenticated to see this")
 
 
