@@ -1,0 +1,21 @@
+version: '3'
+services:
+    api:
+        build: ./api
+        image: auth0-drf
+        container_name: auth-api
+        ports:
+            - '8000:8000'
+        volumes:
+            - ./api/:/usr/src/auth/api/
+        tty: true
+
+    web:
+        build: ./web
+        image: auth0-vue
+        container_name: auth-web
+        ports:
+            - '8080:8080'
+        volumes:
+            - ./web/:/usr/src/auth/web/
+        tty: true
